@@ -4,3 +4,7 @@ resource random_string main {
   upper = false
   special = false
 }
+
+output rando {
+  value = random_string.main.result
+}
